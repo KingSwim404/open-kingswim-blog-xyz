@@ -1,0 +1,73 @@
+{
+  "name": "open-kingswim-blog-xyz",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "deploy": "vue-cli-service ftpdeploy --genHist --diffFileOnly --ftpCfgPath /ftpdeploy/ --ftpHistPath /ftpdeploy/",
+    "dev": "vue-cli-service serve --open --mode development",
+    "pro": "vue-cli-service build --mode production",
+    "dep": "npm run pro  && npm run deploy",
+    "ana": "use_analyzer=true npm run dev"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "lib-flexible": "^0.3.2",
+    "tiny-pinyin": "^1.3.0",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.12.0",
+    "vue-lazyload": "^1.3.1",
+    "vue-router": "^3.0.7"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-apply": "^0.12.0",
+    "postcss-pxtorem": "^4.0.1",
+    "vue-cli-plugin-ftp-deploy": "^0.1.12",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-bundle-analyzer": "^3.4.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {},
+      "postcss-custom-properties": {},
+      "postcss-custom-media": {},
+      "postcss-media-minmax": {},
+      "postcss-custom-selectors": {},
+      "postcss-apply": {},
+      "postcss-pxtorem": {
+        "rootValue": 50,
+        "propList": [
+          "*"
+        ]
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

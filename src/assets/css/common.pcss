@@ -1,0 +1,12 @@
+:root {
+    --main-color: #50bfff;
+    --margin-scree-top:5%;
+}
+
+/* @apply 的css 无法放在全局里面共享。*/
+
+
+/* 全局小屏幕范围定义*/
+@custom-media --mobile-media (width <= 800px);
+
+/* 选择器别名： @custom-selector :--heading #search input;*/
