@@ -53,11 +53,6 @@
   "postcss": {
     "plugins": {
       "postcss-preset-env": {},
-      "postcss-custom-properties": {},
-      "postcss-custom-media": {},
-      "postcss-media-minmax": {},
-      "postcss-custom-selectors": {},
-      "postcss-apply": {},
       "postcss-pxtorem": {
         "rootValue": 50,
         "propList": [
