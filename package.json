@@ -11,7 +11,7 @@
     "ana": "use_analyzer=true npm run dev"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^2.6.5",
     "lib-flexible": "^0.3.2",
     "tiny-pinyin": "^1.3.0",
